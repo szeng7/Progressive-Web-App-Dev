@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#FF9800"/> <!--only here for lighthouse checklist-->
+  </head>
+  <body>
+    <button onclick="button()">Click me</button>
+
+  <p id="text"></p>
+
+  <script>
+    function button() {
+      document.getElementById("text").innerHTML = "Hello World";
+    }
+  </script>
+
+    <!--Service Worker Registration-->
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+      }
+    </script>
+  </body>
+</html>

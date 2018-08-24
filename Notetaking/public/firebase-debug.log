@@ -1,0 +1,127 @@
+[debug] [2018-08-21T16:20:32.912Z] ----------------------------------------------------------------------
+[debug] [2018-08-21T16:20:32.914Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-08-21T16:20:32.914Z] CLI Version:   4.0.3
+[debug] [2018-08-21T16:20:32.914Z] Platform:      darwin
+[debug] [2018-08-21T16:20:32.915Z] Node Version:  v8.11.3
+[debug] [2018-08-21T16:20:32.915Z] Time:          Tue Aug 21 2018 12:20:32 GMT-0400 (EDT)
+[debug] [2018-08-21T16:20:32.915Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-21T16:20:32.924Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-21T16:20:32.924Z] > authorizing via signed-in user
+[debug] [2018-08-21T16:20:32.925Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/notes-b4ba5  
+  
+ Tue Aug 21 2018 12:20:32 GMT-0400 (EDT)
+[debug] [2018-08-21T16:20:33.189Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-21T16:20:33.190Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/notes-b4ba5/tokens  
+  
+ Tue Aug 21 2018 12:20:33 GMT-0400 (EDT)
+[debug] [2018-08-21T16:20:33.483Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'notes-b4ba5'...
+[info] 
+[info] i  deploying database, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-08-21T16:20:33.686Z] >>> HTTP REQUEST PUT https://notes-b4ba5.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+} 
+ Tue Aug 21 2018 12:20:33 GMT-0400 (EDT)
+[debug] [2018-08-21T16:20:33.863Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules syntax for database notes-b4ba5 is valid
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-08-21T16:20:34.796Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/notes-b4ba5/uploads/-LKSHPinpgMIomiO5zfy?fileCount=782&message=  
+  
+ Tue Aug 21 2018 12:20:34 GMT-0400 (EDT)
+[debug] [2018-08-21T16:22:55.785Z] ----------------------------------------------------------------------
+[debug] [2018-08-21T16:22:55.787Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-08-21T16:22:55.787Z] CLI Version:   4.0.3
+[debug] [2018-08-21T16:22:55.787Z] Platform:      darwin
+[debug] [2018-08-21T16:22:55.787Z] Node Version:  v8.11.3
+[debug] [2018-08-21T16:22:55.788Z] Time:          Tue Aug 21 2018 12:22:55 GMT-0400 (EDT)
+[debug] [2018-08-21T16:22:55.788Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-21T16:22:55.796Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-21T16:22:55.797Z] > authorizing via signed-in user
+[debug] [2018-08-21T16:22:55.798Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/notes-b4ba5  
+  
+ Tue Aug 21 2018 12:22:55 GMT-0400 (EDT)
+[debug] [2018-08-21T16:22:56.040Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-21T16:22:56.041Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/notes-b4ba5/tokens  
+  
+ Tue Aug 21 2018 12:22:56 GMT-0400 (EDT)
+[debug] [2018-08-21T16:22:56.296Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-21T16:22:56.298Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/notes-b4ba5  
+  
+ Tue Aug 21 2018 12:22:56 GMT-0400 (EDT)
+[debug] [2018-08-21T16:22:56.415Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/szeng/Desktop/Epi/PWA2'...
+[info] 
+[debug] [2018-08-21T16:22:56.417Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/329758368623/clients/_:getWebAppConfig  
+  
+ Tue Aug 21 2018 12:22:56 GMT-0400 (EDT)
+[debug] [2018-08-21T16:22:56.838Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
+[debug] [2018-08-21T16:22:56.851Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/329758368623/clients/_:getWebAppConfig  
+  
+ Tue Aug 21 2018 12:22:56 GMT-0400 (EDT)
+[debug] [2018-08-21T16:22:57.343Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5004 is not available. Trying another port...
+[debug] [2018-08-21T16:22:57.346Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/329758368623/clients/_:getWebAppConfig  
+  
+ Tue Aug 21 2018 12:22:57 GMT-0400 (EDT)
+[debug] [2018-08-21T16:22:57.648Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5008
+
+[debug] [2018-08-21T16:25:00.922Z] ----------------------------------------------------------------------
+[debug] [2018-08-21T16:25:00.925Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-08-21T16:25:00.925Z] CLI Version:   4.0.3
+[debug] [2018-08-21T16:25:00.925Z] Platform:      darwin
+[debug] [2018-08-21T16:25:00.925Z] Node Version:  v8.11.3
+[debug] [2018-08-21T16:25:00.926Z] Time:          Tue Aug 21 2018 12:25:00 GMT-0400 (EDT)
+[debug] [2018-08-21T16:25:00.926Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-21T16:25:00.936Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-21T16:25:00.936Z] > authorizing via signed-in user
+[debug] [2018-08-21T16:25:00.941Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/notes-b4ba5  
+  
+ Tue Aug 21 2018 12:25:00 GMT-0400 (EDT)
+[debug] [2018-08-21T16:25:01.269Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-21T16:25:01.269Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/notes-b4ba5/tokens  
+  
+ Tue Aug 21 2018 12:25:01 GMT-0400 (EDT)
+[debug] [2018-08-21T16:25:01.608Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-21T16:25:01.609Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/notes-b4ba5  
+  
+ Tue Aug 21 2018 12:25:01 GMT-0400 (EDT)
+[debug] [2018-08-21T16:25:01.695Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/szeng/Desktop/Epi/PWA2'...
+[info] 
+[debug] [2018-08-21T16:25:01.697Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/329758368623/clients/_:getWebAppConfig  
+  
+ Tue Aug 21 2018 12:25:01 GMT-0400 (EDT)
+[debug] [2018-08-21T16:25:01.890Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
+[debug] [2018-08-21T16:25:01.905Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/329758368623/clients/_:getWebAppConfig  
+  
+ Tue Aug 21 2018 12:25:01 GMT-0400 (EDT)
+[debug] [2018-08-21T16:25:02.374Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5004 is not available. Trying another port...
+[debug] [2018-08-21T16:25:02.377Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/329758368623/clients/_:getWebAppConfig  
+  
+ Tue Aug 21 2018 12:25:02 GMT-0400 (EDT)
+[debug] [2018-08-21T16:25:02.644Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5008 is not available. Trying another port...
+[debug] [2018-08-21T16:25:02.647Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/329758368623/clients/_:getWebAppConfig  
+  
+ Tue Aug 21 2018 12:25:02 GMT-0400 (EDT)
+[debug] [2018-08-21T16:25:02.817Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5012
+
