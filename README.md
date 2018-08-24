@@ -4,18 +4,18 @@ This is a grouping of a couple of progressive web apps that I created for a pres
 
 Main features outlined were the offline capability, push notifications, easy accessibility on mobile apps (as well as quick download times) and background syncing, all of which is pertinent to the use cases the department outlined.
 
- Weather App:
+ **Weather App:**
     -Shows wide scope of usages for PWAs and demonstrates basic offline capabilities and downloadability (ability to save to homescreen)
     -Hosted at https://progwebapp-ed612.firebaseapp.com/
  
- Notetaking App:
+ **Notetaking App:**
     -Shows another usage for PWAs as well as log-in features
     -Hosted at https://progwebapp-ed612.firebaseapp.com
  
- Task to do List:
+ **Task to do List:**
     -Shows background sync capabilities and additional offline features
     -Explores uses of libraries (Workbox) and task runners (Gulp) to make development much easier
     
- Hello World Program:
+ **Hello World Program:**
     -Basic program used to show tech leads how simple making an app a "progressive web app" is (essentially just a manifest       json and a service worker)
     -Hosted at https://helloworldpwa-db3c6.firebaseapp.com/
