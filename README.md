@@ -15,6 +15,7 @@ Main features outlined were the offline capability, push notifications, easy acc
  **Task to do List:**
     -Shows background sync capabilities and additional offline features
     -Explores uses of libraries (Workbox) and task runners (Gulp) to make development much easier
+    -Run with npm run --silent start
     
  **Hello World Program:**
     -Basic program used to show tech leads how simple making an app a "progressive web app" is (essentially just a manifest       json and a service worker)
